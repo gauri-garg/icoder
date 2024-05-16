@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>icoder-Life Of Programmer</title>
+</head>
+
+<body style="margin: 0;padding: 0;background: local;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/icoder/icoder.html">icoder</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/icoder/home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/icoder/contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/icoder/about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Topics
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/icoder/app.html">App development</a>
+                        <a class="dropdown-item" href="/icoder/web.html">Web development </a>
+                        <a class="dropdown-item" href="/icoder/ai.html">Ai technology</a>
+                        <a class="dropdown-item" href="/icoder/software.html">software development</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Write for us</a>
+                    </div>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+                <button data-toggle="modal" data-target="#loginModal" class="btn btn-danger btn-lg" id="btn">log
+                    in</button>
+                <button data-toggle="modal" data-target="#signupModal" class="btn btn-danger btn-lg" id="button">sign
+                    up</button>
+            </div>
+        </div>
+    </nav>
+    <!--login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">login to icoder</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--signup modal-->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Get an icoder account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="First name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Last name">
+                            </div>
+                        </div>
+                    </form>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="cexampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group">
+                            <label for="cexampleInputPassword1">confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Signup</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background: url(web1.jpg);width: 100%; height: 500px; ">
+        <h1 style="text-align: center;color: white;">Learn web development</h1>
+        <p style="text-align: center; color: white; margin-top: 20px;font-size: larger;">Explore our growing collection
+            of courses on key
+            web design and development subjects.<br> An industry expert has written each course, helped by members of
+            the
+            Chrome team. Follow the modules sequentially, or dip into the topics you most want to learn about.
+        </p>
+    </div>
+    <div style="text-align: center;color: rgb(0, 34, 255);">
+        <h1>What you need to learn for web development?
+        </h1>
+    </div>
+    <div style="text-align: center;background-color: rgba(0, 128, 34, 0.823);" class="text-danger">
+        <h1>1:Learn HTML
+        </h1>
+    </div>
+    <div class="row" data-masonry="{&quot;percentPosition&quot;: true }"
+        style="position: relative; height: 1066px; font-size: large;">
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+            <div class="card text-center">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="web2.png" alt="">
+                <div class="card-body">
+                    <h3 style="color: palevioletred;" class="card-title">Learn</h3>
+                    <p class="card-text">
+                    <h4>Details and Summary</h4>
+                    Discover how the very useful details and summary elements work, and where to use them.
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 50%; top: 0px;">
+            <div class="card p-3">
+                <figure class="p-3 mb-0">
+                    <blockquote class="blockquote">
+                        <p>
+                        <h4>Overviewof HTML</h4>
+                        A brief introduction to the key concepts in HTML.
+
+                        <h4> Document structure</h4>
+                        Learn how to structure your HTML documents with a solid foundation.
+
+                        <h4>Metadata</h4>
+                        How to use meta tags to provide information about your documents.
+
+                        <h4>Semantic HTML</h4>
+                        Using the correct HTML elements to describe your document content.
+
+                        <h4>Headings and sections</h4>
+                        How to correctly use sectioning elements to give meaning to your content.
+
+                        <h4>Dialog</h4>
+                        The Dialog element is a useful element for representing any kind of dialog in HTML, find out how
+                        it works.
+
+                        <h4>Attributes</h4>
+                        Learn about the different global attributes along with attributes specific to particular HTML
+                        elements.</p>
+
+                        <h4> HTML APIs</h4>
+                        Learn how HTML information can be exposed and manipulated using JavaScript. </p>
+                    </blockquote>
+                </figure>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 50%; top: 200.6px;">
+            <div class="card text-center">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="web3.webp" alt="">
+                <div class="card-body">
+                    <h3 style="color: palevioletred;" class="card-title">Learn</h3>
+                    <p class="card-text">
+                    <h4>Audio and Video</h4>
+                    Discover how to work with HTML media such as audio and video.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 524.2px;">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3 style="color: palevioletred;" class="card-title">Learn</h3>
+                    <p class="card-text">
+                    <h4>Links</h4>
+                    Everything you need to know about links.
+
+                    <h4>Lists</h4>
+                    Lists and other ways of grouping your content.
+
+                    <h4>Focus</h4>
+                    How to manage focus order in your HTML documents.
+
+                    <h4>Tables</h4>
+                    Understanding how to use tables to mark up tabular data.
+
+                    <h4>Forms</h4>
+                    An overview of forms in HTML.
+                    <h4>Text basics</h4>
+                    How to format text using HTML.
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 840.4px;">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3 style="color: palevioletred;" class="card-title">Learn</h3>
+                    <p class="card-text">
+                    <h4>Images</h4>
+                    An overview of images in HTML.
+
+                    <h4>Conclusion and next steps</h4>
+                    Wrapping up with some further resources..</p>
+
+                    <h4>Template, slot, and shadow</h4>
+                    An explanation of template, slot, and shadow.
+                    <h4>Navigation</h4>
+                    Navigation is a key element of any site of application, and it starts with HTML.
+                    <h4>Other inline text elements</h4>
+                    An introduction to the range of elements used to mark-up text
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center;background-color: rgba(0, 128, 34, 0.823);" class="text-danger">
+        <h1>2:Learn CSS
+        </h1>
+    </div>
+    <div class="row" data-masonry="{&quot;percentPosition&quot;: true }"
+        style="position: relative; height: 1066px; font-size: large;">
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+            <div class="card text-center">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="web4.jpg" alt="">
+                <div class="card-body">
+                    <h3 style="color: palevioletred;" class="card-title">Learn</h3>
+                    <p class="card-text">
+                    <h4>Conclusion and next steps</h4>
+                    Further resources to help you take your next steps.
+                    <h4>Text and typography</h4>
+                    Learn how to style text on the web.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 50%; top: 0px;">
+            <div class="card p-3">
+                <figure class="p-3 mb-0">
+                    <blockquote class="blockquote">
+                        <h4>Box Modal</h4>
+                        <p>Because everything CSS displays is a box, understanding how the CSS Box Model works is a core
+                            foundation of CSS.
+
+                        <h4> Selectors</h4>
+                        To apply CSS to an element, you need to select it. CSS gives you a number of different ways to
+                        do this, and you can explore them in this module.
+
+                        <h4>The cascade</h4>
+                        Sometimes two or more competing CSS rules can apply to an element. Find out how the browser
+                        chooses which to use, and how to control this selection.
+
+                        <h4>Specificity</h4>
+                        This module takes a deeper look at specificity, a key part of the cascade.
+
+                        <h4>Inheritance</h4>
+                        Some CSS properties inherit if you don't specify a value for them. Find out how this works and
+                        how to use it to your advantage in this module.
+
+                        <h4>Color</h4>
+                        There are several different ways to specify color in CSS. This module examines the most commonly
+                        used color values.
+
+                        <h4>Sizing Units</h4>
+                        Find out how to size elements using CSS, working with the flexible medium of the web.
+                        <h4>Lists</h4>
+                        A list, structurally, is composed of a list container element filled with list items. In this
+                        module, you'll learn how to style all the parts of a list.
+
+                        <h4>Functions</h4>
+                        CSS has a range of inbuilt functions. Learn about some of the key functions and how to use them.
+                        <h4>Blend Modes</h4>
+                        Create compositional effects by mixing two or more layers, and learn how to isolate an image with a
+                        white background in this module on blend modes.
+
+                    </blockquote>
+                </figure>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 50%; top: 200.6px;">
+            <div class="card text-center">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="web5.png" alt="">
+                <div class="card-body">
+                    <h3 style="color: palevioletred;" class="card-title">Learn</h3>
+                    <p class="card-text">
+                    <h4>Overflow</h4>
+                    Overflow is how you deal with content that doesn't fit in a set parent size. In this module, you'll
+                    think outside the box and learn how to style overflowing content.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 524.2px;">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3 style="color: palevioletred;" class="card-title">Learn</h3>
+                    <p class="card-text">
+                    <h4>Layout</h4>
+                    An overview of the various layout methods you have to choose from when building
+                    a component or page layout.
+
+                    <h4>Flexbox</h4>
+                    Flexbox is a layout mechanism designed for laying out groups of items in one dimension. Learn
+                    how to use it in this module.
+
+                    <h4>Grid</h4>
+                    CSS Grid Layout provides a two dimensional layout system, controlling layout in rows and
+                    columns. Discover everything the grid has to offer.
+
+                    <h4>Logical Properties</h4>
+                    Logical, flow-relative properties and values are linked to the flow of text, not the physical
+                    shape of the screen. Learn how to take advantage of this newer approach to CSS.
+                    <h4>Gradients</h4>
+                    In this module, you'll find out how to use the various types of gradients available in CSS.
+                    Gradients can create a whole host of useful effects, without the need for graphics apps to create
+                    images.
+
+                    <h4>Animations</h4>
+                    Animation is a great way to highlight interactive elements, and add interest and fun to your
+                    designs. Find out how to add and control animation effects with CSS.
+                    <h4>Filters</h4>
+                    Filters in CSS mean you can apply effects you might only think were possible in a graphics
+                    application. In this module, you can discover what is available.
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 840.4px;">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3 style="color: palevioletred;" class="card-title">Learn</h3>
+                    <p class="card-text">
+                    <h4>spacing</h4>
+                    Find out how to select the best method of spacing elements for the layout method you're using and
+                    the component you're building.
+
+                    <h4>Pseudo-elements</h4>
+                    A pseudo-element is like adding or targeting an extra element without having to add more HTML. They
+                    have a variety of roles, and you can learn about them in this module.
+
+                    <h4>Pseudo-classes</h4>
+                    Pseudo-classes let you apply CSS based on state changes. This means your design can react to user
+                    input, such as an invalid email address.
+
+                    <h4>Borders</h4>
+                    A border provides a frame for your boxes. Find out how to change the size, style, and color of
+                    borders using CSS.
+                    There are a number of ways to add shadows to text and elements in CSS. Learn how to use each option,
+                    and the tasks they were designed for.
+
+                    <h4>Focus</h4>
+                    Understand the importance of focus in your web applications. You'll learn how to manage focus, and
+                    how to make sure the path through your page works for both people using a mouse and people using the
+                    keyboard to navigate.
+
+                    <h4>Z-index and stacking contexts</h4>
+                    Find out how to control the order in which elements layer on top of each other by using z-index and
+                    the stacking context.
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div style="text-align: center; background-color: rgba(0, 128, 34, 0.823);" class="text-danger">
+        <h1>2:Learn JS
+        </h1>
+    </div>
+    <div class="row" data-masonry="{&quot;percentPosition&quot;: true }"
+    style="position: relative; height: 1066px; font-size: large;">
+    <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+        <div class="card text-center">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="web6.png" alt="">
+            <div class="card-body">
+                <h3 style="color: palevioletred;" class="card-title">Learn</h3>
+                <p class="card-text">
+                <h4>Extend classes</h4>
+                The `extends` keyword lets you create subclasses of existing classes.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 50%; top: 0px;">
+        <div class="card p-3">
+            <figure class="p-3 mb-0">
+                <blockquote class="blockquote">
+                    <h4>Learn JS</h4>
+                    An in-depth course on the basics of JavaScript.
+                    <h4>introduction to JavaScript</h4>
+                    A brief history of JavaScript and an overview of its basic rules.
+                    <h4>Data types and structure</h4>
+                    The basic "primitive" data types of JavaScript.
+                    <h4>Numbers</h4>
+                    Learn how to use JavaScript's number data type.
+                    <h4>String</h4>
+                    Learn how to use JavaScript's string data type.
+                    <h4>Boolean</h4>
+                    Learn how to use JavaScript's boolean data type.
+                    <h4>Null and Undefined values</h4>
+                    Learn how to use JavaScript's null and undefined data types.
+                    <h4>Class fields and method</h4>
+                    Use class fields and methods to add properties to your classes.
+                    <h4>Static initialization block</h4>
+                    Use static initialization blocks to set or alter static fields.
+                    <h4>Appendix</h4>
+                    Additional information that might be helpful on your JavaScript journey.
+                    <h4>Keyed Collections</h4>
+                    Learn how to use keyed collections such as maps and sets.
+    
+                </blockquote>
+            </figure>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 50%; top: 200.6px;">
+        <div class="card text-center">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="web7.jpg" alt="">
+            <div class="card-body">
+                <h3 style="color: palevioletred;" class="card-title">Learn</h3>
+                <p class="card-text">
+                <h4>Introduction to classes</h4>
+                Learn how to use classes in JavaScript.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 524.2px;">
+        <div class="card text-center">
+            <div class="card-body">
+                <h3 style="color: palevioletred;" class="card-title">Learn</h3>
+                <p class="card-text">
+                <h4>Biglnt</h4>
+                Learn how to use JavaScript's BigInt data type.
+                <h4>Symbols</h4>
+                Learn how to use JavaScript's symbol data type.
+                <h4>variables</h4>
+                Learn how to use JavaScript variables.
+                <h4>comparison operators</h4>
+                Learn how to use comparison operators.
+                <h4>Control Flow</h4>
+                Learn about JavaScript's control flow.
+                <h4>Prototypal Inheritance</h4>
+                JavaScript objects and prototypal inheritance
+                <h4>Property Descriptors</h4>
+                Use property descriptors to configure your JavaScript objects.
+                <h4>Indexed Collections</h4>
+                Learn how to use indexed collections such as arrays.
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 840.4px;">
+        <div class="card text-center">
+            <div class="card-body">
+                <h3 style="color: palevioletred;" class="card-title">Learn</h3>
+                <p class="card-text">
+                <h4>introduction to function</h4>
+                An introduction to JavaScript functions.
+                <h4>Function Expression</h4>
+                An introduction to JavaScript function expressions.
+                <h4>The "NEW" keyboard</h4>
+                Call functions using the `new` keyword to create objects.
+                <h4>The "RETURN" keyboard</h4>
+                Use the `return` keyword to get more out of your functions.
+                <h4>The "THIS" keyboard</h4>
+                Use the `this` keyword to work with the context your function executes in.
+                <h4>introductionto object</h4>
+                Introduction to JavaScript objects.
+                <h4>Property Accessors</h4>
+                Learn how to set, alter, and access the properties of an object.
+            </div>
+        </div>
+    </div>
+</div>
+<devsite-footer-promos class="devsite-footer">
+    <nav class="devsite-footer-promos nocontent" aria-label="Promotions">
+        <ul class="devsite-footer-promos-list">
+            <li class="devsite-footer-promo">
+                <a href="https://www.linkedin.com/in/gauri-garg-582011290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    class="devsite-footer-promo-title gc-analytics-event" data-category="Site-Wide Custom Events"
+                    data-label="Footer LinkedIn Promo">
+                    <picture>
+                        <source class="devsite-dark-theme"
+                            srcset="https://www.linkedin.com/in/gauri-garg-582011290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            media="(prefers-color-scheme: none)" loading="lazy" alt="LinkedIn">
+
+                        <img class="devsite-footer-promo-icon" src="linkedin.png" width="100" height="100"
+                            loading="lazy" alt="LinkedIn">
+                    </picture>
+                    LinkedIn
+                </a>
+                <div style="color: black; font-size: large;" class="devsite-footer-promo-description">Connect with
+                    the icoder owner gauri garg on
+                    LinkedIn</div>
+            </li>
+
+
+            <li class="devsite-footer-promo">
+                <a href="https://www.instagram.com/gaurig_arg?igsh=N283MzR3bnl6Ymlk"
+                    class="devsite-footer-promo-title gc-analytics-event" data-category="Site-Wide Custom Events"
+                    data-label="Footer instagram Promo">
+                    <picture>
+                        <source class="devsite-dark-theme"
+                            srcset="https://www.instagram.com/gaurig_arg?igsh=N283MzR3bnl6Ymlk"
+                            media="(prefers-color-scheme: none)" loading="lazy" alt="instagram">
+                        <img class="devsite-footer-promo-icon" src="insta.webp" width="100" height="100"
+                            loading="lazy" alt="instagram">
+                    </picture>
+                    instagram
+                </a>
+                <div style="color: black; font-size: large;" class="devsite-footer-promo-description">Check out
+                    icoder owner gauri garg on instagram</div>
+            </li>
+        </ul>
+    </nav>
+</devsite-footer-promos>
+<footer style="background: url(space.jpg); color: white;" class="py-5">
+    <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+                </li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+                </li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+                </li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+                </li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+                </li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+                </li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                    <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>© 2024 icoder Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                        <use xlink:href="#twitter"></use>
+                    </svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis"
+                    href="https://www.instagram.com/gaurig_arg?igsh=N283MzR3bnl6Ymlk"><svg class="bi" width="24"
+                        height="24">
+                        <use xlink:href="https://www.instagram.com/gaurig_arg?igsh=N283MzR3bnl6Ymlk"></use>
+                    </svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                        <use xlink:href="#facebook"></use>
+                    </svg></a></li>
+        </ul>
+    </div>
+</footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
+
+    <script type="text/JavaScript">
+        $('#button').on('click', function(){
+            $('#signupModal').modal('show');
+        });
+        </script>
+    <script type="text/JavaScript">
+        $('#btn').on('click', function(){
+            $('#loginModal').modal('show');
+        });
+        </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
